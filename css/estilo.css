@@ -1,0 +1,281 @@
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, #05F2DB, 44.9%, #ffffff 45%) no-repeat fixed;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #EAF2F8;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, #BF045B, 45%, #05F2DB 44.9%) no-repeat fixed;
+    text-align: center;
+    color: white;
+}
+
+.content-bem-vindo {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #F2F4F4;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bem-vindo {
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.servicos {
+    width: 48%;
+    height: auto;
+    margin: 10px;
+}
+
+.parceiros {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.cliente {
+    width: 8%;
+}
+
+.cliente img {
+    width: 100px;
+    height: auto;
+    margin: 10px; 
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.cliente img:hover {
+    filter: grayscale(0%);
+}
+
+.projetos {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bem-vindo h1 {
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    height: auto;
+    color: #BF045B;
+}
+
+.servicos h3 {
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    height: auto;
+    color: #F24405;
+}
+
+.parceiros p {
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    height: auto;
+    font-size: 16px;
+}
+
+.parceiros h1 {
+    color: #BF045B;
+}
+
+.projetos h2 {
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    height: auto;
+    color: #F24405;
+}
+
+.projetos p {
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    height: auto;
+    font-size: 16px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.projetos img {
+    width: 1200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2px;
+    height: auto;
+    font-size: 16px;
+}
+
+.whatsapp-button {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    height: 52px;
+    width: 52px;
+    font-size: 42px;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container, .header, .navbar, .content, .footer, .content-bem-vindo, .bem-vindo, .servicos, 
+    .parceiros, .cliente, .cliente img, .cliente img:hover, .projetos, .contato, .imagem, .bem-vindo h1, .servicos h3, .parceiros p, .parceiros h1, 
+    .parceiros img, .parceiros img:hover, .projetos h3, .projetos p, .projetos img, p, .whatsapp-button, .footer p  {
+      width: 100%;
+    }
+    .content-bem-vindo {
+        width: 100%;
+    }
+    .bem-vindo {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .servicos {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .parceiros {
+        display: flex;
+        flex-direction: row;
+    }
+    .cliente {
+        width: 30%;
+        height: auto;
+    }
+    .cliente img {
+        filter: grayscale(0%);
+    }
+    .projetos {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .contato {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .imagem img {
+        width: 90%;
+        height: auto;
+    }
+    .parceiros img {
+        width: 90%;
+    }
+    .projetos img {
+        width: 90%;
+        height: auto;
+    }
+    .bem-vindo h1, .parceiros h1  {
+        font-size: 1.3em;
+    }
+    .servicos h3, .projetos h3 {
+        font-size: 1.1em;
+    }
+    .parceiros p, .projetos p, p, .footer p  {
+        font-size: 0.9em;
+    }
+    .whatsapp-button {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+  }
+}
+

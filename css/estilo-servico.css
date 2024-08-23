@@ -1,0 +1,185 @@
+.servicos {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #F2F4F4;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.servicos-detalhes {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #F2F4F4;
+    text-align: justify;
+    display: flex;
+    flex: 1 0 33%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1px;
+    margin: 2px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.servicos-detalhes h2 {
+    color: rgba(191, 4, 91, 0.7);
+    font-size: 28px;
+    width: auto;
+    text-align: center;
+}
+
+.personalizados {
+    width: 100%;
+    background-color: rgba(5, 242, 219, 0.3);
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalizados p {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0D0D0D;
+}
+
+.abordagem {
+    display: flex;
+    align-items: center;
+    background-color: #F2F4F4;
+    margin-right: 10px;
+}
+
+.abordagem img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.abordagem h3 {
+    text-align: center;
+    color: #0D0D0D;
+}
+
+.depoimentos {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #F2F4F4;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicos img {
+    width: 40%;
+    margin: 1%;
+}
+
+.servicos h1 {
+    width: 100%;
+    text-align: center;
+    color:#BF045B;
+}
+
+.depoimentos h1 {
+    width: 100%;
+    text-align: center;
+    color: #F24405;
+}
+
+.depoimentos img {
+    width: 33%;
+    margin: 2px;
+}
+
+.sticky {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #F24405;
+    color: white; 
+    text-decoration: none; 
+    font-size: 14px; 
+}
+
+.sticky:hover {
+    height: 51px;
+    width: 204px;
+    font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+ .container, .header, .navbar, .footer, .servicos, .servicos-detalhes, .abordagem, .aboragem img, .abordagem h3, .servicos-detalhes h2, 
+ .personalizados p, .depoimentos, .sericos img, .servicos h1, .depoimentos h1, .depoimentos img, .sticky {
+    width: 100%;
+    }
+
+    .servicos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .servicos-detalhes{
+        width: 80%;
+        height: auto;
+    }
+    .servicos h1 {
+        font-size: 1.2em;
+    }
+    .personalizados {
+        width: 90%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .personalizados p {
+        width: 90%;
+        font-size: 0.9em;
+    }
+    .servicos-detalhes h2{
+        font-size: 1.0em;
+    }
+    .servicos img, .depoimentos img {
+        width: 90%;
+    }
+    .abordagem {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .abordagem h3 {
+        font-size: 0.9em;
+    }
+
+    .depoimentos h1 {
+        font-size: 1.2em;
+    }
+    .sticky {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+}
